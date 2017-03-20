@@ -73,7 +73,7 @@
           <appendAssemblyId>false</appendAssemblyId>
           <archive>
             <manifest>
-              <mainClass>Controlador</mainClass>
+              <mainClass>uniandes.ecos.tarea4psp.Controlador</mainClass>
             </manifest>
           </archive>
         </configuration>

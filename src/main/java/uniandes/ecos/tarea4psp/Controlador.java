@@ -40,7 +40,7 @@ public class Controlador
         port(Integer.valueOf(System.getenv("PORT")));
         staticFileLocation("/public");
 
-        get("/hello", (req, res) -> 
+        get("/Intervalos", (req, res) -> 
             {
                 Map<String,Map> intervalos= control.adminDatos.calcularIntervalos();
                 return control.menus.mostrarResultados(intervalos);

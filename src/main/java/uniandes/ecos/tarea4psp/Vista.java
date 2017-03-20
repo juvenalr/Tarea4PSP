@@ -18,16 +18,45 @@ public class Vista
      public String mostrarResultados(Map<String,Map> mapaIntervalos)
      {
         String salida="";
+        String vs="";
+        String s="";
+        String m="";
+        String l="";
+        String vl="";
         for (Map.Entry<String, Map> dato : mapaIntervalos.entrySet())
 	{ 
-          salida= salida + dato.getKey() + ": ";
+          salida= salida + dato.getKey() + ": "+ System.lineSeparator();
           Map <String,Double> intervalos = dato.getValue();
 	   for(Map.Entry<String, Double> intervalo: intervalos.entrySet())
            {
-               salida = salida + intervalo.getKey() +"(" + intervalo.getValue().toString() + ")  ";
+               if (intervalo.getKey().equals("VS"))
+               {
+                vs= "VS: " + intervalo.getValue().toString() + System.lineSeparator();
+               }
+               
+               else if(intervalo.getKey().equals("S") )
+               {
+                s= "S: " + intervalo.getValue().toString() + System.lineSeparator();
+               }
+               
+               else if(intervalo.getKey().equals("M") )
+               {
+                m= "M: " + intervalo.getValue().toString() + System.lineSeparator();
+               }
+               
+                else if(intervalo.getKey().equals("L") )
+               {
+                l= "L: " + intervalo.getValue().toString() + System.lineSeparator();
+               }
+               
+                 else if(intervalo.getKey().equals("VL") )
+               {
+                vl= "VL: " + intervalo.getValue().toString() + System.lineSeparator();
+               }
+              
                
            }
-           salida=salida+"\r\n";
+           salida=salida + vs +s+m+l+vl;
 	}
         return salida;      
      }
