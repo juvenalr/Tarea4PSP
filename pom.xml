@@ -73,7 +73,7 @@
           <appendAssemblyId>false</appendAssemblyId>
           <archive>
             <manifest>
-              <mainClass>Main</mainClass>
+              <mainClass>Controlador</mainClass>
             </manifest>
           </archive>
         </configuration>
