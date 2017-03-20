@@ -69,7 +69,7 @@
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
-          <finalName>helloworld</finalName>
+          <finalName>Tarea4PSP</finalName>
           <appendAssemblyId>false</appendAssemblyId>
           <archive>
             <manifest>
